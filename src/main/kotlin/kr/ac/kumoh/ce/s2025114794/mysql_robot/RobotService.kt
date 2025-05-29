@@ -8,5 +8,9 @@ class RobotService(val repository: RobotRepository) {
 //        return repository.findAll()
 //    }
 
-    fun getAllRobots(): List<Robot> = repository.findAll()
+//    fun getAllRobots(): List<Robot> = repository.findAll()
+
+    fun getRobotWithWeapons(): List<EquipmentDto> {
+        return repository.findAllEquipment()
+    }
 }
